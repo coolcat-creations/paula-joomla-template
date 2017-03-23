@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.7" type="template" client="site">
+	<name>paula</name>
+	<creationDate>2017</creationDate>
+	<author>Elisa Foltyn</author>
+	<authorEmail>book@coolcat-creations.com</authorEmail>
+	<authorUrl>http://www.coolcat-creations.com</authorUrl>
+	<copyright>Copyright 2013-2016 Blackrock Digital LLC</copyright>
+	<license>Code released under the [MIT]
+		(https://github.com/BlackrockDigital/startbootstrap-creative/blob/gh-pages/LICENSE) license.
+	</license>
+	<version>1.0</version>
+	<description>TPL_PAULA_DESC</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>error.php</filename>
+		<filename>component.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>favicon.ico</filename>
+		<filename>LICENSE</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+		<folder>vendor</folder>
+	</files>
+
+	<positions>
+		<position>MAINNAV</position>
+		<position>HEADER</position>
+		<position>TEASER</position>
+		<position>TOP</position>
+		<position>BREADCRUMBS</position>
+		<position>RIGHT</position>
+		<position>PORTFOLIO</position>
+		<position>ACTION</position>
+		<position>CONTACT</position>
+	</positions>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+
+			<field name="templatecolor" type="list" default="orange"
+			       label="TPL_PAULA_FIELD_THEME"
+			       description="TPL_PAULA_FIELD_THEME_DESC"
+			       filter="word">
+				<option value="orange">TPL_PAULA_FIELD_THEME_ORANGE</option>
+				<option value="blue">TPL_PAULA_FIELD_THEME_BLUE</option>
+			</field>
+
+			<field name="logotype" type="list" default="0" label="TPL_PAULA_FIELD_LOGOTYPE"
+					description="TPL_PAULA_FIELD_LOGOTYPE_DESC" filter="word">
+					<option value="text">TPL_PAULA_FIELD_LOGOTYPE_TEXT</option>
+					<option value="image">TPL_PAULA_FIELD_LOGOTYPE_IMG</option>
+			</field>
+
+			<field name="logotext" type="text" default="MEIN LOGOTEXT"
+					label="TPL_PAULA_FIELD_LOGOTEXT"
+					description="TPL_PAULA_FIELD_LOGOTEXT_DESC"
+					showon="logotype:text" />
+
+			<field name="logoimg" type="media" default="templates/paula/images/logo.jpg"
+					label="TPL_PAULA_FIELD_LOGOIMG"
+					description="TPL_PAULA_FIELD_LOGOIMG_DESC"
+					showon="logotype:image" />
+
+				<field name="logoimgalt" type="text" default=""
+					label="TPL_PAULA_FIELD_LOGOIMG_ALT"
+					description="TPL_PAULA_FIELD_LOGOIMG_ALT_DESC"
+					showon="logotype:image" />
+
+				<field name="mainoutput" type="radio" default="yes"
+					label="TPL_PAULA_FIELD_MAINOUTPUT"
+					description="TPL_PAULA_FIELD_MAINOUTPUT_DESC">
+						<option value="yes">JSHOW</option>
+						<option value="no">JHIDE</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_paula.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_paula.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_paula.ini</language>
+		<language tag="de-DE">de-DE/de-DE.tpl_paula.sys.ini</language>
+	</languages>
+
+</extension>
