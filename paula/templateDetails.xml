@@ -31,15 +31,15 @@
 	</files>
 
 	<positions>
-		<position>MAINNAV</position>
-		<position>HEADER</position>
-		<position>TEASER</position>
-		<position>TOP</position>
-		<position>BREADCRUMBS</position>
-		<position>RIGHT</position>
-		<position>PORTFOLIO</position>
-		<position>ACTION</position>
-		<position>CONTACT</position>
+		<position>mainnav</position>
+		<position>header</position>
+		<position>teaser</position>
+		<position>top</position>
+		<position>breadcrumbs</position>
+		<position>right</position>
+		<position>portfolio</position>
+		<position>action</position>
+		<position>contact</position>
 	</positions>
 
 	<config>
