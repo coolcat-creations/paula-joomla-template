@@ -59,8 +59,7 @@ $this->addCustomTag($stylelink);
 $metaviewport = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
 $this->addCustomTag($metaviewport);
 
-//Beginn Template
-
+// Beginn Template
 ?>
 
 <!DOCTYPE html>
