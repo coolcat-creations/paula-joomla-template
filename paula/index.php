@@ -64,8 +64,7 @@ $this->addCustomTag($metaviewport);
 
 <!DOCTYPE html>
 
-<!-- Sprache des Dokumentes - kann auf "de" Abgeändert werden -->
-<html lang="en">
+<html xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>">
 
 <head>
 	<!-- Hier werden die Joomla! Headerdaten geladen -->
