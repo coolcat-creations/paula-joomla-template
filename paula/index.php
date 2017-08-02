@@ -55,9 +55,9 @@ $stylelink .= '<![endif]-->' . "\n";
 // Custom Tags für den IE9 hinzufügen
 $this->addCustomTag($stylelink);
 
-// Custom Tag für den Viewport definieren
-$metaviewport = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
-$this->addCustomTag($metaviewport);
+// MetaTag für den Viewport definieren
+$this->setMetaData('viewport', 'width=device-width, initial-scale=1');
+
 
 // Beginn Template
 ?>
