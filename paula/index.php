@@ -39,12 +39,12 @@ JHtml::_('jquery.framework');
 JHtml::_('bootstrap.framework');
 
 // Laden der Skriptdateien für Easing, Scrolling und Popups
-$this->addScript('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', 'text/javascript', true, false);
-$this->addScript($tplpath . '/vendor/scrollreveal/scrollreveal.min.js', 'text/javascript', true, false);
-$this->addScript($tplpath . '/vendor/magnific-popup/jquery.magnific-popup.min.js', 'text/javascript', true, false);
+$this->addScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', 'text/javascript', array('defer'=>'true' , 'async'=>'false'));
+$this->addScript($tplpath. '/vendor/scrollreveal/scrollreveal.min.js', 'text/javascript', array('defer'=>'true' , 'async'=>'false'));
+$this->addScript($tplpath. '/vendor/magnific-popup/jquery.magnific-popup.min.js', 'text/javascript', array('defer'=>'true' , 'async'=>'false'));
 
 // Laden der Skriptdateien für das Template
-$this->addScript($tplpath . '/js/creative.min.js', 'text/javascript', true, false);
+$this->addScript($tplpath . '/js/creative.min.js', 'text/javascript', array('defer'=>'true' , 'async'=>'false'));
 
 // Custom Tags für den IE9 definieren
 $stylelink = '<!--[if lte IE 9]>' . "\n";
