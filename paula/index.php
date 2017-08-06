@@ -3,8 +3,6 @@
 // Hier definieren wir eine kurze Variable für den aktuellen Templatepfad
 $tplpath = $this->baseurl . '/templates/' . $this->template;
 
-$this->setHtml5(true);
-
 // Laden der Bootstrap CSS
 $this->addStyleSheet($tplpath . '/vendor/bootstrap/css/bootstrap.min.css');
 
