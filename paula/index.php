@@ -29,6 +29,9 @@ else
 
 // Skripte laden
 
+// HTML5 Unterstützung aktivieren
+$this->setHtml5(true);
+
 // jQuery Skript von Joomla! laden
 JHtml::_('jquery.framework');
 
