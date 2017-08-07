@@ -39,12 +39,12 @@ JHtml::_('jquery.framework');
 JHtml::_('bootstrap.framework');
 
 // Laden der Skriptdateien für Easing, Scrolling und Popups
-$this->addScript('http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', 'text/javascript', true, false);
-$this->addScript($tplpath . '/vendor/scrollreveal/scrollreveal.min.js', 'text/javascript', true, false);
-$this->addScript($tplpath . '/vendor/magnific-popup/jquery.magnific-popup.min.js', 'text/javascript', true, false);
+$this->addScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', 'text/javascript', array('defer'=>'defer'));
+$this->addScript($tplpath . '/vendor/scrollreveal/scrollreveal.min.js', 'text/javascript', array('defer'=>'defer'));
+$this->addScript($tplpath . '/vendor/magnific-popup/jquery.magnific-popup.min.js', 'text/javascript', array('defer'=>'defer'));
 
 // Laden der Skriptdateien für das Template
-$this->addScript($tplpath . '/js/creative.min.js', 'text/javascript', true, false);
+$this->addScript($tplpath . '/js/creative.min.js', 'text/javascript', array('defer'=>'true' , 'async'=>'false'));
 
 // Custom Tags für den IE9 definieren
 $stylelink = '<!--[if lte IE 9]>' . "\n";
@@ -55,17 +55,16 @@ $stylelink .= '<![endif]-->' . "\n";
 // Custom Tags für den IE9 hinzufügen
 $this->addCustomTag($stylelink);
 
-// Custom Tag für den Viewport definieren
-$metaviewport = "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">";
-$this->addCustomTag($metaviewport);
-?>
+// MetaTag für den Viewport definieren
+$this->setMetaData('viewport', 'width=device-width, initial-scale=1');
 
-<!-- Beginn Template -->
+
+// Beginn Template
+?>
 
 <!DOCTYPE html>
 
-<!-- Sprache des Dokumentes - kann auf "de" Abgeändert werden -->
-<html lang="en">
+<html xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>">
 
 <head>
 	<!-- Hier werden die Joomla! Headerdaten geladen -->
