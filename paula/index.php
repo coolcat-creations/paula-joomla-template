@@ -45,7 +45,7 @@ $this->addScript($tplpath . '/vendor/scrollreveal/scrollreveal.min.js', 'text/ja
 $this->addScript($tplpath . '/vendor/magnific-popup/jquery.magnific-popup.min.js', 'text/javascript', array('defer'=>'defer'));
 
 // Laden der Skriptdateien für das Template
-$this->addScript($tplpath . '/js/creative.min.js', 'text/javascript', array('defer'=>'true' , 'async'=>'false'));
+$this->addScript($tplpath . '/js/creative.min.js', 'text/javascript', array('defer'=>'defer'));
 
 // Custom Tags für den IE9 definieren
 $stylelink = '<!--[if lte IE 9]>' . "\n";
